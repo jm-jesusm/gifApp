@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterService } from './services/router.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor(private routerService: RouterService) {}
+
   title = 'gifApp';
 }

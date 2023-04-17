@@ -1,0 +1,8 @@
+<aside class="p-5 grid bg-neutral-800 text-white">
+    <h1>History</h1>
+    <ul class="ml-3">
+        <li class="text-neutral-400" *ngFor="let link of gifService.history">
+            <a class="text-sm" routerLink="{{link.keyword}}" routerLinkActive="text-neutral-300">{{ link.keyword }}</a>
+        </li>
+    </ul>
+</aside>
